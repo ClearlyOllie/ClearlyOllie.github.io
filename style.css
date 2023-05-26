@@ -13,30 +13,29 @@
 }
 
 .contents {
-  margin: 0px 10% 0px 10%;
+  margin: 0% 10% 0% 10%;
   color: white;
 }
 
 .contents hr{
   border: 3px solid var(--blue);
   border-radius: 10px;
-  margin: 50px 0px 50px 0px;
+  margin: 5% 0% 5% 0%;
   
 }
 
 .contents .hr1 {
-  margin: 0px 0px 50px 0px;
+  margin: 0% 0% 5% 0%;
 }
 
 .contents h2 {
-  font-size: 30px;
-  font-weight: 350;
+  font-size: 200%;
+  font-weight: normal;
 }
 
 .contents .exemplar .imagecontainer {
   display: grid;
   width: 100%;
-  margin: 0px 0px 0px 0px;
   justify-content: center;
   grid-template-columns: auto auto auto;
 
@@ -44,7 +43,7 @@
 
 .contents .exemplar .imagecontainer img{
   width: inherit;
-  padding: 20px 20px 20px 20px;
+  padding: 5% 5% 5% 5%;
   filter: drop-shadow(50%);
 }
 
@@ -55,7 +54,7 @@
 .contents .exemplar a {
   text-decoration: none;
   color: white;
-  margin: 0px 5px 0px 5px;
+  margin: 0% 5% 0% 0%;
   padding: 0px 5px 0px 5px;
   border-radius: 10px;
   border: 3px solid var(--blue);
@@ -67,7 +66,7 @@
 
 
 .contents p{
-  margin: 20px 0px 0px 0px;
+  margin: 2% 0% 0% 0%;
   font-size: 20px;
   font-weight: 350;
 }
@@ -76,7 +75,6 @@
   height: 100px;
   line-height: 40px;
   padding: 30px 0px 30px 0px;
-  
 }
 
 .contents nav a {
@@ -85,6 +83,7 @@
   text-decoration: none;
   font-weight: 500;
   color: white;
+  
 }
 
 
@@ -130,7 +129,7 @@
 
 .contents footer .grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto ;
 }
 
 .contents footer a {
@@ -188,19 +187,16 @@
   cursor: pointer;
 }
 
-.contents .disclaimer {
-  color: var(--blue);
-}
 
-@media (max-width: 1460px) {
+@media (max-width: 2000px) {
 
   .contents nav .links {
     display: none;
   }
 
   .contents nav .container {
-    display: inline-block;
     float: right;
+    
   }
   
   .contents nav .container .bar1, .contents nav .container .bar2, .contents nav .container .bar3 {
@@ -213,5 +209,20 @@
   .contents nav .container .bar2, .contents nav .container .bar3{
     margin: 8px 0px 0px 0px;
   }
+  
+  /* #compactMenu {
+    display: None;
+  } */
+
+  #compactMenu a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 2% 40% 0% 40%;
+    border: 3px solid var(--blue);
+    border-radius: 10px;
+  }
+
 
 }
