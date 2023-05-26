@@ -216,12 +216,17 @@
 
   #compactMenu a{
     text-align: center;
-    display: block;
+    display: none;
     text-decoration: none;
     color: white;
     margin: 2% 40% 0% 40%;
     border: 3px solid var(--blue);
     border-radius: 10px;
+    transition: width 1.2s;
+  }
+
+  #compactMenu hr {
+    display: none;
   }
 
 
