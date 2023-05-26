@@ -17,21 +17,28 @@
   color: white;
 }
 
+.contents p {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+.contents h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .contents hr{
   border: 3px solid var(--blue);
   border-radius: 10px;
-  margin: 5% 0% 5% 0%;
+  margin: 50px 0px 50px 0px;
   
 }
 
 .contents .hr1 {
-  margin: 0% 0% 5% 0%;
+  margin: 0px 0px 0px 20px 0px;
 }
 
-.contents h2 {
-  font-size: 200%;
-  font-weight: normal;
-}
 
 .contents .exemplar .imagecontainer {
   display: grid;
@@ -43,7 +50,7 @@
 
 .contents .exemplar .imagecontainer img{
   width: inherit;
-  padding: 5% 5% 5% 5%;
+  padding: 20px 20px 20px;
   filter: drop-shadow(50%);
 }
 
@@ -54,7 +61,7 @@
 .contents .exemplar a {
   text-decoration: none;
   color: white;
-  margin: 0% 5% 0% 0%;
+  margin: 0px 20px 0px 0px;
   padding: 0px 5px 0px 5px;
   border-radius: 10px;
   border: 3px solid var(--blue);
@@ -62,14 +69,16 @@
 
 .contents .exemplar .photos:hover {
   background-color: var(--purple);
+  transition: 0.8s ease;
 }
 
 
-.contents p{
-  margin: 2% 0% 0% 0%;
-  font-size: 20px;
-  font-weight: 350;
-}
+/* .contents p{
+  margin: 20px 0px 0px 0px;
+  font-size: 25px;
+  font-weight: normal;
+
+} */
 
 .contents nav {
   height: 100px;
@@ -98,12 +107,13 @@
   padding: 0px 13px 0px 13px;
   border: 3px solid var(--blue);
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 350;
 }
 
 .contents nav .links a:hover {
   background-color: var(--purple);
+  transition: 0.8s ease;
 }
 
 .contents .heading {
@@ -123,69 +133,47 @@
   height: auto;
 }
 
-.contents footer p {
-  line-height: auto;
-}
-
 .contents footer .grid {
+  grid-template-columns: auto auto;
   display: grid;
-  grid-template-columns: auto auto ;
 }
 
-.contents footer a {
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.contents footer .grid .socialMedia {
-  padding: 0% 20% 0% 20%;
+.contents footer .grid .contact li, .contents footer .grid .socialMedia li {
   list-style-type: none;
 }
 
-.contents footer .grid .socialMedia li a {
-  margin: 25px 0px 0px 0px;
+.contents footer .socialMedia li a {
+  display: block;
+  line-height: 40px;
+  font-size: 24px;
+  margin: 20px 0px 0px 0px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
   border: 3px solid var(--blue);
   border-radius: 10px;
-  display: block;
-  line-height: 40px;
-  height: 40px;
 }
 
-.contents footer .grid .socialMedia li a:hover {
+.contents footer .socialMedia li a:hover{
   background-color: var(--purple);
+  transition: 0.8s ease;
 }
 
-.contents footer .grid .contact {
-  list-style-type: none;
-}
-
-.contents footer .grid .contact li p{
-  display: block;
-}
-
-.contents footer .grid .contact li .contents P{
-  margin: 25px 0px 0px 0px;
-  height: 40px;
+.contents footer .grid li p {
+  font-size: 24px;
+  margin: 20px 0px 0px 0px;
+  border: 3px solid transparent;
+  padding: 5px 10px 5px 10px;
+  font-weight: normal;
   line-height: 40px;
-  font-size: 18px;
+  width: inh;
+}
+
+.contents footer .grid .contact li .contents p{
   text-align: left;
 }
 
-.contents footer .grid .contact li .contents button {
-  float: right;
-  color: white;
-  border: 3px solid var(--blue);
-  width: 70px;
-  height: 40px;
-  border-radius: 10px;
-  font-size: 18px;
-}
-
-.contents footer .grid .contact li .contents button:hover {
-  background-color: var(--purple);
-  cursor: pointer;
-}
 
 
 @media (max-width: 2000px) {
@@ -209,24 +197,19 @@
   .contents nav .container .bar2, .contents nav .container .bar3{
     margin: 8px 0px 0px 0px;
   }
-  
-  /* #compactMenu {
-    display: None;
-  } */
+
 
   #compactMenu a{
     text-align: center;
-    display: none;
+    display: block;
     text-decoration: none;
     color: white;
-    margin: 2% 40% 0% 40%;
+    margin: 20px;
     border: 3px solid var(--blue);
+    padding: 20px 0px 20px 0px;
+    font-size: 24px;
     border-radius: 10px;
     transition: width 1.2s;
-  }
-
-  #compactMenu hr {
-    display: none;
   }
 
 

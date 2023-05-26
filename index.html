@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Pressure point</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -10,12 +10,12 @@
     <div class="contents">
       <nav>
 
-        <a href="/index.html">Pressure Point</a>
+        <a href="index.html">Pressure Point</a>
         <div class="links">
-          <a href="/index.html">Home</a>
-          <a href="/about.html">About us</a>
-          <a href="/social.html">Social Media</a>
-          <a href="/contact.html">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="social.html">Social Media</a>
+          <a href="contact.html">Contact</a>
         </div>
 
         <div class="container" onclick="showNavMenu()">
@@ -23,8 +23,6 @@
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-
-        
 
       </nav>
 
@@ -48,9 +46,9 @@
       <div class="exemplar">
         <h2>EXAMPLES OF OUR WORK...</h2>
         <div class="imagecontainer">
-          <img src="/images/testing.jpg" alt="exampleOfWork"></img>
-          <img src="/images/testing.jpg" alt="exampleOfWork"></img>
-          <img src="/images/testing.jpg" alt="exampleOfWork"></img>
+          <img src="images/testing.jpg" alt="exampleOfWork"></img>
+          <img src="images/testing.jpg" alt="exampleOfWork"></img>
+          <img src="images/testing.jpg" alt="exampleOfWork"></img>
         </div>
         <p>More can be found <a class="photos" href="/about.html">here</a></p>
       </div>
@@ -67,16 +65,13 @@
       <footer>
 
         <div class="grid">
-
-        
-
           <ul class="contact">
             <li>
               <p>Contact:</p>
               <div class="contents">
-                <p>jakemuxlow@gmail.com<button onclick="">Copy</button></p>
-                <p>Messenger: Jake Muxlow<button onclick="">Copy</button></p>
-                <p>07598577587<button onclick="">Copy</button></p>
+                <p>Email: jakemux@gmail.com</p>
+                <p>Facebook Messenger: Jake</p>
+                <p>Phone Number: 0759887</p>
               </div>
             </li>
           </ul>
@@ -95,6 +90,27 @@
         <p class="disclaimer">©Pressure Point 2023</p>
       </footer>
     </div>
-    <script src="/script.js"></script>
+    <script>
+      var men = document.getElementById('compactMenu');
+      var bar = document.getElementById('v1');
+      men.style.display = 'none';
+      bar.style.display = 'none';
+
+
+      function showNavMenu() {
+        var men = document.getElementById('compactMenu');
+        var bar = document.getElementById('v1');
+
+        if (men.style.display === 'none' && bar.style.display === 'none') {
+          men.style.display = 'block';
+          bar.style.display = 'block';
+        } else {
+          men.style.display = 'none';
+          bar.style.display = 'none';
+        };
+
+
+      }
+    </script>
   </body>
 </html>
